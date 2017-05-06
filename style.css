@@ -1,0 +1,161 @@
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+
+}
+
+.navbar {
+  display: block;
+  height: 64px;
+  width: 100%;
+  border: 1px solid white;
+  margin: 0;
+  text-align: center;
+
+  font-size: 18px;
+
+}
+
+.title-button {
+  text-decoration: none;
+  line-height: 64px;
+  width: 128px;
+  color: white;
+  display: block;
+  float: left;
+}
+
+.menu-button {
+  text-decoration: none;
+  line-height: 64px;
+  width: 128px;
+  color: white;
+  display: block;
+  float: right;
+}
+
+.title-button:hover {
+  color: #d9d9d9;
+}
+
+.menu-button:hover {
+  color: #d9d9d9;
+}
+
+#title {
+  width: 100%;
+  margin-top: 250px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
+  font-family: "Bitter", serif;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#subtext {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 226px;
+}
+
+#overview {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.product-box {
+  display: block;
+  width: 260px;
+  height: 260px;
+  float: left;
+  line-height: 260px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+}
+
+.product-box a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.product-box:hover {
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.description-box {
+  margin-top: 8px;
+  border: 1px solid white;
+  height: auto;
+  float: left;
+  width: 100%;
+  padding: 32px;
+}
+
+#scythe {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("scythe-bg.jpg") fixed center;
+}
+
+#arkham-horror-lcg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("arkham-horror-lcg-bg.jpg") fixed center;
+}
+
+#fallout-wasteland-warfare {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("fallout-wasteland-warfare-bg.jpg") fixed center;  
+}
+
+.picture-box a {
+  margin: 0;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  align-items: center;
+  margin-right: 32px;
+  float: left;
+}
+
+.picture-box a img {
+  max-width: 300px;
+  max-height: 300px;
+  vertical-align: middle;
+  float: left;
+}
+
+.picture-box a img:hover {
+
+}
+
+.summary-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#footer {
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  float: left;
+  text-align: center;
+}
