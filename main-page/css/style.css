@@ -1,10 +1,13 @@
 * {
-
   box-sizing: border-box;
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dungeon.jpg");
   background-position: bottom center;
   background-attachment: fixed;
   font-family: "Source Sans Pro", sans-serif;
@@ -14,19 +17,19 @@ body {
 
 .navbar {
   display: block;
-  height: 64px;
+  height: 4rem;
   width: 100%;
   border: 1px solid white;
   margin: 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.1rem;
 
 }
 
 .title-button {
   text-decoration: none;
-  line-height: 64px;
-  width: 128px;
+  line-height: 4rem;
+  width: 8rem;
   color: white;
   display: block;
   float: left;
@@ -34,8 +37,8 @@ body {
 
 .menu-button {
   text-decoration: none;
-  line-height: 64px;
-  width: 128px;
+  line-height: 4rem;
+  width: 8rem;
   color: white;
   display: block;
   float: right;
@@ -50,52 +53,61 @@ body {
 }
 
 #title {
-  width: 100%;
-  margin-top: 250px;
-  margin-bottom: 24px;
+  width: auto;
+  margin-top: 10%;
+  margin-bottom: 1%;
   text-align: center;
   color: white;
   font-family: "Inknut Antiqua", serif;
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 3.3rem;
+  font-weight: 400;
 }
 
 #subtext {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 26px;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 226px;
+  margin-bottom: 12%;
 }
 
 #overview {
+  margin: 0 0.5%;
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .product-box {
   display: block;
-  width: 260px;
-  height: 260px;
+  width: 256px;
+  height: 256px;
   float: left;
-  line-height: 260px;
-  background-color: rgba(255, 255, 255, 0.05);
+  line-height: 256px;
   border: 1px solid white;
+  opacity: 0.7;
 }
 
-.product-box a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.product-box img {
+  max-width: 100%;
+  height: auto;
 }
 
 .product-box:hover {
-  background-color: rgba(255, 255, 255, 0.2)
+  opacity: 0.9;
+}
+
+.bg-tabs {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 22px 24px;
+  float: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
 }
 
 .tabcontent {
@@ -107,22 +119,29 @@ body {
   padding: 32px;
   display: none;
   
+  -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
 }
 
 #scythe {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url("scythe-bg.jpg") fixed center;
+    url("../img/scythe-bg.jpg") fixed center;
 }
 
 #arkham-horror-lcg {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url("arkham-horror-lcg-bg.jpg") fixed center;
+    url("../img/arkham-horror-lcg-bg.jpg") fixed center;
 }
 
 #fallout-wasteland-warfare {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url("fallout-wasteland-warfare-bg.jpg") fixed center;  
+    url("../img/fallout-wasteland-warfare-bg.jpg") fixed center;  
+}
+
+/* Game picture and options */
+.sidebar {
+  float: left;
+  height: 100%;
 }
 
 .picture-box a {
@@ -143,8 +162,25 @@ body {
   float: left;
 }
 
-.picture-box a img:hover {
-  opacity: 0.7;
+.picture-box a:hover {
+  opacity: 0.9;
+}
+
+.options-bar {
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  height: 100%;
+  width: 300px;
+}
+
+.options-button {
+  display: block;
+  border: 1px solid white;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 .summary-text {
@@ -168,43 +204,14 @@ body {
   margin-bottom: 16px;
   float: left;
   text-align: center;
+  padding: 32px 64px;
 }
 
-.bg-tabs {
-  display: block;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 22px 24px;
-  float: left;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid white;
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
 }
-
-.sidebar {
-  float: left;
-  height: 100%;
-}
-
-.options-bar {
-  float: left;
-  margin-top: 2px;
-  margin-bottom: 8px;
-  height: 100%;
-  width: 300px;
-}
-
-.options-button {
-  display: block;
-  border: 1px solid white;
-  padding: 8px 10px;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-}
-
 @keyframes fadeEffect {
-  from {opacity: 0;}
+  from {opacity: 0.4;}
   to {opacity: 1;}
 }
