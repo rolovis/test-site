@@ -19,7 +19,6 @@ body {
   border: 1px solid white;
   margin: 0;
   text-align: center;
-
   font-size: 18px;
 
 }
@@ -56,7 +55,7 @@ body {
   margin-bottom: 24px;
   text-align: center;
   color: white;
-  font-family: "Bitter", serif;
+  font-family: "Inknut Antiqua", serif;
   font-size: 60px;
   font-weight: 500;
 }
@@ -101,7 +100,8 @@ body {
 
 .tabcontent {
   border: 1px solid white;
-  height: 400px;
+  height: auto;
+  min-height: 400px;
   float: left;
   width: 100%;
   padding: 32px;
@@ -144,13 +144,21 @@ body {
 }
 
 .picture-box a img:hover {
-
+  opacity: 0.7;
 }
 
 .summary-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
+}
+
+.summary-text h3 {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 #footer {
@@ -167,10 +175,33 @@ body {
   background-color: rgba(0, 0, 0, 0);
   padding: 22px 24px;
   float: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   border: 1px solid white;
+}
+
+.sidebar {
+  float: left;
+  height: 100%;
+}
+
+.options-bar {
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  height: 100%;
+  width: 300px;
+}
+
+.options-button {
+  display: block;
+  border: 1px solid white;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 @keyframes fadeEffect {
