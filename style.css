@@ -99,13 +99,15 @@ body {
   background-color: rgba(255, 255, 255, 0.2)
 }
 
-.description-box {
-  margin-top: 8px;
+.tabcontent {
   border: 1px solid white;
-  height: auto;
+  height: 400px;
   float: left;
   width: 100%;
   padding: 32px;
+  display: none;
+  
+  animation: fadeEffect 1s;
 }
 
 #scythe {
@@ -158,4 +160,20 @@ body {
   margin-bottom: 16px;
   float: left;
   text-align: center;
+}
+
+.bg-tabs {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 22px 24px;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
