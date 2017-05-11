@@ -72,30 +72,26 @@ body {
   margin-bottom: 12%;
 }
 
-#overview {
+#slide-list {
   margin: 0 0.5%;
   display: flex;
   justify-content: space-between;
-  flex-flow: row nowrap;
 }
 
-.product-box {
+.slide {
   display: block;
-  width: 256px;
-  height: 256px;
+  width: 18%;
+  height: 14%;
   float: left;
-  line-height: 256px;
   border: 1px solid white;
-  opacity: 0.7;
+  
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
 }
 
-.product-box img {
-  max-width: 100%;
-  height: auto;
-}
-
-.product-box:hover {
-  opacity: 0.9;
+.slide img {
+  width: 100%;
+  opacity: 0;
 }
 
 .bg-tabs {
@@ -110,6 +106,16 @@ body {
   border: 1px solid white;
 }
 
+.bg-tabs:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.bg-tabs:active {
+
+}
+
 .tabcontent {
   border: 1px solid white;
   height: auto;
@@ -119,8 +125,8 @@ body {
   padding: 32px;
   display: none;
   
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 0.7s;
+  animation: fadeEffect 0.7s;
 }
 
 #scythe {
@@ -208,10 +214,10 @@ body {
 }
 
 @-webkit-keyframes fadeEffect {
-  from {opacity: 0.4;}
+  from {opacity: 0.7;}
   to {opacity: 1;}
 }
 @keyframes fadeEffect {
-  from {opacity: 0.4;}
+  from {opacity: 0.7;}
   to {opacity: 1;}
 }
