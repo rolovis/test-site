@@ -1,6 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
   <body>
-    <h1>IT'S COWBOY HEY HEY</h1>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../main-page/main-page.html" style="font-family:'Inknut Antiqua', serif">
+          <img class="pull-left" src="img/d20.png">critic.al
+        </a>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2" id="sidebar">
+          <div class="panel-group">
+            <div class="panel panel-default no-border" id="library-panel">
+              <div class="panel-heading">
+                <a data-toggle="collapse" href="#library">
+                  <span class="glyphicon glyphicon-book"></span> Library 
+                  <span class="caret"></span>
+                </a>
+              </div>
+              <div class="panel panel-collapse collapse in no-border" id="library">
+                <div class="panel-body">
+                  <table class="table-striped">
+                    <tbody>
+                      <tr><td><a href="#">Android: Netrunner</a></td></tr>
+                      <tr><td><a href="#">Dominion</a></td></tr>
+                      <tr><td><a href="#">Patchwork</a></td></tr>
+                      <tr><td><a href="#">7 Wonders: Duels</a></td></tr>
+                      <tr><td><a href="#">Five Tribes</a></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default no-border" id="wishlist-panel">
+              <div class="panel-heading">
+                <a data-toggle="collapse" href="#wishlist">
+                  <span class="glyphicon glyphicon-bookmark"></span> Wishlist 
+                  <span class="caret"></span>
+                </a>
+              </div>
+              <div class="panel panel-collapse collapse no-border" id="wishlist">
+                <div class="panel-body">
+                  <table class="table-striped">
+                    <tbody>
+                      <tr><td><a href="#">Scythe</a></td></tr>
+                      <tr><td><a href="#">Fallout: Wasteland Warfare</a></td></tr>
+                      <tr><td><a href="#">Arkham Horror: The Card Game</a></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10" id="game-info">
+          <div style="height:10px"></div>
+          <div class="well">
+            <h1 style="text-align:center; font-family:'Inknut Antiqua', serif">Arkham Horror: The Card Game</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="thumbnail">
+                <img src="img/arkham-horror-lcg.jpg">
+              </div>
+              <div class="btn-group-vertical" style="width:100%">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-book"></span> Add to Library</button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-bookmark"></span> Add to Wishlist</button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-star-empty"></span> Rate this game</button>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-inbox"></span> Write a review</button>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="well well-sm">
+                <h4><p>Something evil stirs in Arkham, and only you can stop it. Blurring the traditional lines between roleplaying and card game experiences, Arkham Horror: The Card Game is a Living Card Game of Lovecraftian mystery, monsters, and madness!</p>
+
+                <p>In the game, you and your friend (or up to three friends with two Core Sets) become characters within the quiet New England town of Arkham. You have your talents, sure, but you also have your flaws. Perhaps you've dabbled a little too much in the writings of the Necronomicon, and its words continue to haunt you. Perhaps you feel compelled to cover up any signs of otherworldly evils, hampering your own investigations in order to protect the quiet confidence of the greater population. Perhaps you'll be scarred by your encounters with a ghoulish cult.</p>
+
+                <p>No matter what compels you, no matter what haunts you, you'll find both your strengths and weaknesses reflected in your custom deck of cards, and these cards will be your resources as you work with your friends to unravel the world's most terrifying mysteries.</p>
+
+                <p>Each of your adventures in Arkham Horror LCG carries you deeper into mystery. You'll find cultists and foul rituals. You'll find haunted houses and strange creatures. And you may find signs of the Ancient Ones straining against the barriers to our world...</p>
+
+                <p>The basic mode of play in Arkham LCG is not the adventure, but the campaign. You might be scarred by your adventures, your sanity may be strained, and you may alter Arkham's landscape, burning buildings to the ground. All your choices and actions have consequences that reach far beyond the immediate resolution of the scenario at hand — and your actions may earn you valuable experience with which you can better prepare yourself for the adventures that still lie before you.</p></h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default" id="vid-panel">
+                <div class="panel-heading">
+                  <a data-toggle="collapse" href="#videos">
+                    Videos <span class="caret"></span>
+                  </a>
+                </div>
+                <div class="panel-collapse collapse" id="videos">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/okmlHh5uYg4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <p>Arkham Horror LCG - Blood on the Altar Playthrough</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PfOipd_5q1A" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p>Arkham Horror: The Card Game Playthrough - Midnight Masks - Preparation (Story/Deck Building)</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/okmlHh5uYg4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>   
+          
+              
+          
+          <div class="row">          
+            <div class="col-md-4" id="gallery">
+              <div class="panel panel-default" id="gallery-panel">
+                <div class="panel-heading">
+                  <a data-toggle="collapse" href="#gallery-content" style="display:block">
+                    Gallery <span class="caret"></span>
+                  </a>
+                </div>
+                <div id="gallery-content" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="thumbnail">
+                          <img src="img/gallery-1.jpg">
+                        </div>
+                        <div class="thumbnail">
+                          <img src="img/gallery-5.png">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="thumbnail">
+                          <img src="img/gallery-2.jpg">
+                        </div>
+                        <div class="thumbnail">
+                          <img src="img/arkham-horror-lcg.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="thumbnail">
+                          <img src="img/gallery-3.jpg">
+                        </div>
+                        <div class="thumbnail">
+                          <img src="img/arkham-horror-lcg.jpg">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="thumbnail">
+                          <img src="img/gallery-4.jpg">
+                        </div>
+                        <div class="thumbnail" id="more">
+                          <img src="img/more.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>            
+            <div class="col-md-4">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <a data-toggle="collapse" href="#events" style="display:block">
+                    Events <span class="caret"></span>
+                  </a>
+                </div>
+                <div id="events" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Media objects</p>
+                    <div class="well"><p>here's some more</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="col-md-4">
+            <div class="panel-group">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <a data-toggle="collapse" href="#stats-panel" style="color:black">
+                    Stats <span class="caret"></span>
+                  </a>
+                </div>
+                <div id="stats-panel" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Here's some text</p>
+                    <div class="well"><p>here's some more</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+                
+        </div>        
+        
+      </div>
+    </div>
   </body>
 </html>

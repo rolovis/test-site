@@ -1,0 +1,153 @@
+@media screen and (max-width: 1000px) {
+  .nav-pills {
+    display: none;
+  }
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
+}
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-group > .panel:nth-child(odd) > .panel-heading {
+  background-color: white;
+}
+
+.panel-heading a {
+  display: block;
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+}
+
+.panel-heading a:hover {
+  color: black;
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+
+
+.col-md-3 {
+  margin: 0;
+  padding: 0;
+}
+
+.well {
+
+}
+
+.navbar-inverse {
+  background-color: rgb(13, 13, 13);
+  
+}
+
+.navbar-inverse .navbar-brand {
+  padding-left: 4.5%;
+  color: rgb(219, 203, 189);
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: rgb(219, 203, 189);
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: rgb(237, 229, 222);
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: rgb(237, 229, 222);
+}
+
+.navbar-brand img {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.no-border {
+  border: 0;
+}
+
+.table-striped {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.table-striped > tbody > tr > td {
+  padding: 0.5em;
+  border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+  background-color: rgb(36, 36, 36);
+}
+
+#gallery-panel .panel-body {
+  padding: 2% 5% 2% 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#gallery-panel .thumbnail {
+  padding: 5%;
+  margin: 0;
+  border-radius: 0px; 
+}
+
+#gallery-panel .thumbnail img {
+  border: 2px solid black;
+}
+
+#sidebar .panel-heading {
+  background-color: rgb(13, 13, 13);
+  font-family: 'Inknut Antiqua', serif;
+  text-align: center;
+}
+
+#sidebar > .panel-group > .panel:nth-child(even) > .panel-heading {
+  background-color: black;
+}
+
+#sidebar .panel-heading a {
+  text-decoration: none;
+  color: rgb(219, 203, 189);
+
+}
+
+#sidebar .panel-heading a:hover {
+  color: rgb(237, 229, 222);
+}
+
+#sidebar .panel-body {
+  color: rgb(219, 203, 189);
+  background-color: rgb(26, 26, 26);
+  padding: 0;
+}
+
+#sidebar .panel-body a {
+  text-decoration: none;
+  color: rgb(219, 203, 189);
+}
+
+#sidebar .panel-body a:hover {
+  color: rgb(237, 229, 222);
+}
+
+#more img {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+}
+
+#more img:hover {
+  opacity: 0.8;
+}
